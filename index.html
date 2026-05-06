@@ -40,7 +40,11 @@ a{text-decoration:none;color:inherit}
 .topbar span{margin:0 18px;opacity:.4}
 nav{background:var(--white);position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(0,0,0,.08)}
 .nav-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:12px 24px}
-.nav-logo img{height:60px}
+.nav-logo img{
+  height:auto;
+  width:auto;
+  max-height:60px; /* optional cap so it doesn't blow up navbar */
+}
 .nav-links{display:flex;align-items:center;gap:28px;font-size:.95rem;font-weight:500;color:var(--gray-800)}
 .nav-links a:hover{color:var(--blue-600)}
 .btn{display:inline-block;padding:12px 28px;border-radius:6px;font-weight:600;font-size:.95rem;cursor:pointer;border:none;transition:all .2s}
